@@ -1,0 +1,53 @@
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+
+export default function Login(){
+    return(
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Área Restrita</Text>
+            <TextInput style={styles.input} />
+            <TextInput style={styles.input} secureTextEntry={true} />
+            <TouchableOpacity style={styles.botao}>
+                <Text style={styles.titulo}>Login</Text>
+            </TouchableOpacity>
+        </View>
+    );
+
+
+}
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        backgroundColor: 'pink',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 20,
+    },
+    titulo:{
+        fontFamily: 'arial',
+        marginBottom: 20,
+        fontSize: 24,
+        color: 'black',
+        fontWeight: 'bold',
+        
+
+    },
+    input:{
+        width:'100%',
+        height: 45,
+        backgroundColor: '#ffffff',
+        padding: 10,
+        borderRadius: 10,
+        marginBottom: 20,
+    
+    },
+    botao:{
+        width:'100%',
+        height: 45,
+        backgroundColor: 'red',
+        padding: 20,
+        borderRadius: 10,
+        alignItems: 'center',
+
+    }
+})
